@@ -41,7 +41,7 @@ class TransactionList extends StatelessWidget {
                       ),
                       child: Container(
                         width: double.infinity,
-                        height: 80,
+                        height: 90,
                         decoration: BoxDecoration(
                           color: Theme.of(context)
                               .primaryColorLight
@@ -85,7 +85,8 @@ class TransactionList extends StatelessWidget {
                                 children: [
                                   Text(
                                     provider
-                                        .transactions[index].transactionTitle,
+                                        .transactions[index].transactionTitle
+                                        .toString(),
                                     style: GoogleFonts.poppins(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
@@ -93,15 +94,16 @@ class TransactionList extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    provider
-                                        .transactions[index].transactionDetail,
+                                    provider.transactions[index]
+                                        .transactionDescription
+                                        .toString(),
                                     style: GoogleFonts.poppins(
                                       fontSize: 12,
                                       color: Colors.grey.shade500,
                                     ),
                                   ),
                                   Text(
-                                    '${provider.transactions[index].transactionDate.day} ${provider.transactions[index].transactionDate.month} , ${provider.transactions[index].transactionDate.year} at ${DateFormat.jm().format(provider.transactions[index].transactionDate)}',
+                                    '${provider.transactions[index].transactionDate.day}-${provider.transactions[index].transactionDate.month}-${provider.transactions[index].transactionDate.year} at ${DateFormat.jm().format(provider.transactions[index].transactionDate)}',
                                     style: GoogleFonts.poppins(
                                       fontSize: 12,
                                       color: Colors.grey.shade600,
@@ -116,7 +118,7 @@ class TransactionList extends StatelessWidget {
                               child: Padding(
                                 padding: const EdgeInsets.all(8),
                                 child: Text(
-                                  provider.transactions[index].transactionAmount
+                                  'Rs. ${provider.transactions[index].transactionAmount}'
                                       .toString(),
                                   style: GoogleFonts.poppins(
                                     fontWeight: FontWeight.bold,

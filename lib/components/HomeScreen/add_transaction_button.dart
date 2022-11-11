@@ -17,12 +17,6 @@ class AddTransactionButton extends StatelessWidget {
         return GestureDetector(
           onTap: () {
             provider.addTransaction();
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const AddTransactionScreen(),
-              ),
-            );
           },
           child: Padding(
             padding: EdgeInsets.only(

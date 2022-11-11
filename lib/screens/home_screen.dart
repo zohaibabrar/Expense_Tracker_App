@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
                 Row(
                   children: const [
                     // graph
-                    PieChart(),
+                    Pie(),
 
                     // labels
                     GraphLabel(),
