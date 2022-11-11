@@ -1,16 +1,9 @@
-# transaction_app
+## Expense Tracker App :dollar:
 
-A new Flutter project.
+A new Flutter project with local database connection using Hive.
 
-## Getting Started
+To keep track of transactions more accessible, it's better to have a dashboard display that will give a detailed view of all critical transactions, including the total amount saved. With the help of the Flutter framework, I built a responsive dashboard connected locally to the Hive database.
 
-This project is a starting point for a Flutter application.
+![homescreen](https://user-images.githubusercontent.com/75172691/201338441-de194d87-27ab-452c-9ff0-4241d18a8e29.PNG)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![add screen](https://user-images.githubusercontent.com/75172691/201338468-beeabf60-3ebd-429c-b73a-2593e12a71c6.PNG)
